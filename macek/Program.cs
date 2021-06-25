@@ -13,6 +13,7 @@ namespace macek
 
             jidelniZidle.Add(new Zidle("drevo", 0.99f, true, 5, false));
             jidelniZidle.Add(new Zidle("kov", 0.99f, true, 5, false));
+            jidelniZidle.Add(new Zidle("plast", 0.99f, true, 5, false));
 
             for (int i = 0; i < jidelniZidle.Count; i++)
             {
