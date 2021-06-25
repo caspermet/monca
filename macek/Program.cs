@@ -9,20 +9,19 @@ namespace macek
 
         static void Main(string[] args)
         {
+            Console.WriteLine("napiste barvu");
+            var barvaZidli = Console.ReadLine();
+
             jidelniZidle = new List<Zidle>();
 
-            jidelniZidle.Add(new Zidle("drevo", 0.99f, true, 5, false));
-            jidelniZidle.Add(new Zidle("kov", 0.99f, true, 5, false));
-            jidelniZidle.Add(new Zidle("plast", 0.99f, true, 5, false));
-
-            for (int i = 0; i < jidelniZidle.Count; i++)
-            {
-                jidelniZidle[i].Publikace();
-            }
+            jidelniZidle.Add(new Zidle("drevo", 0.99f, true, 5, false, "cerna"));
+            jidelniZidle.Add(new Zidle("kov", 0.99f, true, 5, false, "bila"));
+            jidelniZidle.Add(new Zidle("plast", 0.99f, true, 5, false, "seda"));
 
             foreach (var zidle in jidelniZidle)
             {
-                zidle.Publikace();
+                zidle.ZmenaBarvy(barvaZidli);
+                zidle.PublikaceBarvy();
             }
             /*
                         Console.WriteLine("program na scitani cisel");
