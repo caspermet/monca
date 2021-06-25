@@ -1,0 +1,13 @@
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.exe
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.deps.json
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.runtimeconfig.json
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.runtimeconfig.dev.json
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.dll
+C:\Projects\monca\macek\macek\bin\Debug\netcoreapp3.1\macek.pdb
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.AssemblyInfoInputs.cache
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.AssemblyInfo.cs
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.csproj.CoreCompileInputs.cache
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.dll
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.pdb
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.genruntimeconfig.cache
+C:\Projects\monca\macek\macek\obj\Debug\netcoreapp3.1\macek.csproj.AssemblyReference.cache
