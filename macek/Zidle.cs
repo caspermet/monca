@@ -4,15 +4,18 @@ using System.Text;
 
 namespace macek
 {
+    //sablona
     class Zidle
     {
-        string material;
+        //vlastnosti, promenne
+        public string material;
         float cena;
         bool operadlo;
         int pocetNohou;
         bool otocna;
         string barva;
 
+        //kontruktor
         public Zidle(string material, float cena, bool operadlo, int pocetNohou, bool otocna, string barva)
         {
             this.material = material;

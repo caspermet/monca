@@ -6,6 +6,7 @@ namespace macek
     class Program
     {
         static List<Zidle> jidelniZidle;
+        static List<Zidle> kancelarskezidle;
 
         static void Main(string[] args)
         {
@@ -13,32 +14,27 @@ namespace macek
             var barvaZidli = Console.ReadLine();
 
             jidelniZidle = new List<Zidle>();
+            kancelarskezidle = new List<Zidle>();
 
             jidelniZidle.Add(new Zidle("drevo", 0.99f, true, 5, false, "cerna"));
             jidelniZidle.Add(new Zidle("kov", 0.99f, true, 5, false, "bila"));
             jidelniZidle.Add(new Zidle("plast", 0.99f, true, 5, false, "seda"));
+            kancelarskezidle.Add(new Zidle("sklo", 0.99f, false, 7, true, "zelena"));
 
-            foreach (var zidle in jidelniZidle)
+            var vsechnyzidle = Scitanilistu(jidelniZidle, kancelarskezidle);          
+
+            foreach (var zidle in vsechnyzidle)
             {
-                zidle.ZmenaBarvy(barvaZidli);
                 zidle.PublikaceBarvy();
             }
-            /*
-                        Console.WriteLine("program na scitani cisel");
-                        string textWithoutNumber = "pocet scitancu";
-                        var pocetIteraci = Automatizace(textWithoutNumber, false);
-
-                        int vysledek = 0;
-
-                        for (int i = 1; i <= pocetIteraci; i++)
-                        {
-                            int firstNumber = vysledek;
-                            string textWithNumber = "napiste " + i + ". cislo";
-                            vysledek = LogickeOperace.Secti(firstNumber, Automatizace(textWithNumber));
-                        }
-
-                        Console.WriteLine("vysledek je: " + vysledek);
-                    */
+        }
+        static List<Zidle> Scitanilistu(List<Zidle> zidle1, List<Zidle> zidle2)
+        {
+            foreach (var zidle in zidle2)
+            {
+                zidle1.Add(zidle);
+            }
+            return zidle1;
         }
         static int Automatizace(string text, bool zaporne = true)
         {
